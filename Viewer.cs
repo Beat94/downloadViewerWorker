@@ -3,9 +3,15 @@ namespace ViewerNamespace;
 public class Viewer
 {
     string folder{get;}
-    public Viewer(string foldername)
+    public Viewer(string pathString)
     {
-        folder = foldername;
+        folder = "";
+
+        if(!System.IO.File.Exists(pathString))
+        {
+            folder = pathString;
+        }
+        
     }
 
     public string getFolder(){
