@@ -1,0 +1,27 @@
+{
+    "picture": 
+    {
+        "savelocation": "",
+        "ending": 
+        [
+            "jpeg",
+            "jpg",
+            "png",
+            "gif"
+        ]
+    },
+    "document": 
+    {
+        "savelocation": "",
+        "ending": 
+        [
+            "doc",
+            "dot",
+            "docm",
+            "docx",
+            "dotx",
+            "txt",
+            "xls"
+        ]
+    }
+}
