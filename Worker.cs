@@ -17,6 +17,7 @@ public class Worker : BackgroundService
         Viewer v = new Viewer("E:/daten/Downloads");
 
         _logger.LogInformation(v.getFolder());
+        _logger.LogInformation(v.countFiles().ToString());
         /*
         while (!stoppingToken.IsCancellationRequested)
         {
