@@ -18,6 +18,12 @@ public class Worker : BackgroundService
 
         _logger.LogInformation(v.getFolder());
         _logger.LogInformation(v.countFiles().ToString());
+
+        foreach(FileInfo file in v.fileInfo)
+        {
+            _logger.LogInformation(file.ToString());
+        }
+
         /*
         while (!stoppingToken.IsCancellationRequested)
         {
