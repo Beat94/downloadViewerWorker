@@ -14,7 +14,7 @@ public class Worker : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        Viewer v = new Viewer("TestLink");
+        Viewer v = new Viewer("E:/daten/Downloads");
 
         _logger.LogInformation(v.getFolder());
         /*
