@@ -7,7 +7,7 @@ public class Viewer
     {
         folder = "";
 
-        if(!System.IO.File.Exists(pathString))
+        if(Directory.Exists(pathString))
         {
             folder = pathString;
         }
