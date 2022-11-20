@@ -23,5 +23,15 @@
             "txt",
             "xls"
         ]
+    },
+    "music":
+    {
+        "savelocation": "",
+        "endng":
+        [
+            "mp3",
+            "wav",
+            "flac"
+        ]
     }
 }
