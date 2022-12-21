@@ -33,9 +33,5 @@
             "wav",
             "flac"
         ]
-    },
-    "download":
-    {
-        "savelocation": "E:/daten/Downloads"
     }
 }
