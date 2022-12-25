@@ -26,7 +26,7 @@ public class ConfigLoader
         }
         else
         {
-            ConfigElement? configElement = JsonSerializer.Deserialize<ConfigElement>(@jsonFileName);
+            ConfigElementFolder? configElementFolder = JsonSerializer.Deserialize<ConfigElementFolder>(@jsonFileName);
         }
 
     }
