@@ -15,6 +15,10 @@ public class Worker : BackgroundService
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         Viewer v = new Viewer("E:/daten/Downloads");
+        ConfigLoader cl = new ConfigLoader(@"./config.json");
+        if(cl.error){
+            _logger.LogError(cl.errorMsg);
+        }
 
         _logger.LogInformation(v.getFolder());
         _logger.LogInformation(v.countFiles().ToString());
@@ -23,6 +27,7 @@ public class Worker : BackgroundService
         {
             _logger.LogInformation(file.ToString());
         }
+
 
         /*
         while (!stoppingToken.IsCancellationRequested)

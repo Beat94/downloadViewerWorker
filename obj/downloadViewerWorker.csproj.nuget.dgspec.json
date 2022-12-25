@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\programming\\downloadViewerWorker\\downloadViewerWorker.csproj": {}
+    "e:\\programming\\downloadViewerWorker\\downloadViewerWorker.csproj": {}
   },
   "projects": {
-    "E:\\programming\\downloadViewerWorker\\downloadViewerWorker.csproj": {
+    "e:\\programming\\downloadViewerWorker\\downloadViewerWorker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\programming\\downloadViewerWorker\\downloadViewerWorker.csproj",
+        "projectUniqueName": "e:\\programming\\downloadViewerWorker\\downloadViewerWorker.csproj",
         "projectName": "downloadViewerWorker",
-        "projectPath": "E:\\programming\\downloadViewerWorker\\downloadViewerWorker.csproj",
+        "projectPath": "e:\\programming\\downloadViewerWorker\\downloadViewerWorker.csproj",
         "packagesPath": "C:\\Users\\Beat\\.nuget\\packages\\",
-        "outputPath": "E:\\programming\\downloadViewerWorker\\obj\\",
+        "outputPath": "e:\\programming\\downloadViewerWorker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Beat\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -41,6 +41,10 @@
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
             }
           },
           "imports": [

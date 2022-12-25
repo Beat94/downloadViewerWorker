@@ -4,7 +4,7 @@ namespace ViewerNamespace;
 
 public class ConfigElement
 {
-    public string savelocation{get;}
-    public ArrayList? endingList{get;}
+    public string savelocation{get; set;}
+    public IList<string> ending{get; set;}
     
 }

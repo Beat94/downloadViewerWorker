@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g8o2YMsgBC/G+ZZbdSCJju8IZObRxvI+d9v5lofFmCea7GvCdJSQh+010g4Jbs56C9m5gEnCBX3Z6/fOQqqGhw==",
+  "dgSpecHash": "iBVIVU2MfqV+wD/fmIK4oCyKLc6RDRHbasRTR3gd3cOmmuLdWTUr2EV7FNAdddNBuHO0LkuBSxd/93Y9EOLfkQ==",
   "success": true,
-  "projectFilePath": "E:\\programming\\downloadViewerWorker\\downloadViewerWorker.csproj",
+  "projectFilePath": "e:\\programming\\downloadViewerWorker\\downloadViewerWorker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Beat\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\Beat\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
@@ -29,6 +29,7 @@
     "C:\\Users\\Beat\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\Beat\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\6.0.0\\microsoft.extensions.options.configurationextensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Beat\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Beat\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\Beat\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Beat\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\Beat\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
