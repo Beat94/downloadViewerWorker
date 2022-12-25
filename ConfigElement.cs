@@ -5,6 +5,6 @@ namespace ViewerNamespace;
 public class ConfigElement
 {
     public string savelocation{get;}
-    public ArrayList endingDict{get;}
+    public ArrayList? endingList{get;}
     
 }
