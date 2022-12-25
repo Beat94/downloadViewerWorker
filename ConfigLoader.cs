@@ -1,5 +1,5 @@
 using System.Text.Json;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace ViewerNamespace;
 
@@ -26,7 +26,7 @@ public class ConfigLoader
         }
         else
         {
-            ConfigElement? configElement = JsonConvert.DeserializeObject<ConfigElement>(@jsonFileName);
+            ConfigElement? configElement = JsonSerializer.Deserialize<ConfigElement>(@jsonFileName);
         }
 
     }
