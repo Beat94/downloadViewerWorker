@@ -19,18 +19,16 @@ public class ConfigLoader
 
     public ConfigLoader(string jsonFileName)
     {
-        if(String.IsNullOrEmpty(File.ReadAllText(@jsonFileName)))
+        if(String.IsNullOrEmpty(File.ReadAllText(jsonFileName)))
         {
             this.error = true;
             this.errorMsg = "ConfigFile is null or empty";
         }
         else
         {
-            ConfigElementFolder? configElementFolder = JsonSerializer.Deserialize<ConfigElementFolder>(@jsonFileName);
+            string jsonString = File.ReadAllText(jsonFileName);
+            ConfigElementFolder configElementFolder = JsonSerializer.Deserialize<ConfigElementFolder>(jsonString);
         }
 
     }
-
-    // jsonString muss noch geparsed oder serialisiert (?) werden
-    ConfigElement download = new ConfigElement();
 }
