@@ -6,9 +6,11 @@ public class ConfigImportTester{
         this.configLoader = configLoader;
     }
 
-    public void showConfig(){
-        Console.WriteLine("picture:");
-        Console.WriteLine("SaveLocation: " + configLoader.configElementFolder.picture.savelocation);
+    public string showConfig(){
+        string output = "";
+        output += "picture \n";
+        output += "SaveLocation: " + configLoader.configElementFolder.picture.savelocation;
+        return output;
     }
 
     public void loadConfigFrom(){

@@ -29,7 +29,7 @@ public class Worker : BackgroundService
             _logger.LogInformation(file.ToString());
         }
 
-        cit.showConfig();
+        _logger.LogInformation(cit.showConfig());
 
         /*
         while (!stoppingToken.IsCancellationRequested)
