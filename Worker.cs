@@ -15,7 +15,7 @@ public class Worker : BackgroundService
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         Viewer v = new Viewer("E:/daten/Downloads");
-        ConfigLoader cl = new ConfigLoader(@"./config.json");
+        ConfigLoader cl = new ConfigLoader("./config.json");
         ConfigImportTester cit = new ConfigImportTester(cl);
         if(cl.error){
             _logger.LogError(cl.errorMsg);
