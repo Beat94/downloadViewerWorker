@@ -16,6 +16,7 @@ public class Worker : BackgroundService
     {
         Viewer v = new Viewer("E:/daten/Downloads");
         ConfigLoader cl = new ConfigLoader(@"./config.json");
+        ConfigImportTester cit = new ConfigImportTester(cl);
         if(cl.error){
             _logger.LogError(cl.errorMsg);
         }
@@ -28,6 +29,7 @@ public class Worker : BackgroundService
             _logger.LogInformation(file.ToString());
         }
 
+        cit.showConfig();
 
         /*
         while (!stoppingToken.IsCancellationRequested)
