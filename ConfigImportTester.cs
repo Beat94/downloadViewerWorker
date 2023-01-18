@@ -8,12 +8,27 @@ public class ConfigImportTester{
 
     public string showConfig(){
         string output = "";
-        output += "picture \n";
-        output += "SaveLocation: " + configLoader.configElementFolder.picture.savelocation;
+        output += configToString("picture");
         return output;
     }
 
-    public void loadConfigFrom(){
+    private string msgToString(string msg)
+    {
+        return msg + "\n";
+    }
 
+    private string configToString(string folder)
+    {
+        string output = "";
+        output += msgToString(folder);
+
+        output += folder.Equals("picture") ? output += msgToString("Savelocation: " + configLoader.configElementFolder.picture.savelocation) : "" ;
+        output += folder.Equals("document") ? output += msgToString("Savelocation: " + configLoader.configElementFolder.document.savelocation) : "";
+        output += folder.Equals("music") ? output += msgToString("Savelocation: " + configLoader.configElementFolder.music.savelocation) : "";
+        output += folder.Equals("download") ? output += msgToString("Savelocation: " + configLoader.configElementFolder.download.savelocation) : "";
+        
+        output += !folder.Equals("picture") && !folder.Equals("document") && !folder.Equals("music") && !folder.Equals("download") ? output += msgToString("Savelocation for " + folder + " not found.") : "";
+                
+        return output;
     }
 }
