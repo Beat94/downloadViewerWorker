@@ -12,7 +12,7 @@
     },
     "document": 
     {
-        "savelocation": "",
+        "savelocation": "document Savelocation",
         "ending": 
         [
             "doc",
@@ -26,7 +26,7 @@
     },
     "music":
     {
-        "savelocation": "",
+        "savelocation": "music savelocation",
         "ending":
         [
             "mp3",

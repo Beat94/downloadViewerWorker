@@ -9,6 +9,9 @@ public class ConfigImportTester{
     public string showConfig(){
         string output = "";
         output += configToString("picture");
+        output += configToString("document");
+        output += configToString("music");
+        output += configToString("download");
         return output;
     }
 
