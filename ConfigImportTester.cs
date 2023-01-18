@@ -12,6 +12,7 @@ public class ConfigImportTester{
         output += configToString("document");
         output += configToString("music");
         output += configToString("download");
+        output += configToString("lol");
         return output;
     }
 
