@@ -16,6 +16,15 @@ public class ConfigImportTester{
         return output;
     }
 
+    // should i import whole configloader in getFileEnding-Function
+    public string getFileEndings(string folder)
+    {
+        string output = "";
+        //foreach()
+
+        return output;
+    }
+
     private string msgToString(string msg)
     {
         return msg + "\n";
@@ -26,12 +35,30 @@ public class ConfigImportTester{
         string output = "";
         output += msgToString(folder);
 
-        output += folder.Equals("picture") ? output += msgToString("Savelocation: " + configLoader.configElementFolder.picture.savelocation) : "" ;
-        output += folder.Equals("document") ? output += msgToString("Savelocation: " + configLoader.configElementFolder.document.savelocation) : "";
-        output += folder.Equals("music") ? output += msgToString("Savelocation: " + configLoader.configElementFolder.music.savelocation) : "";
-        output += folder.Equals("download") ? output += msgToString("Savelocation: " + configLoader.configElementFolder.download.savelocation) : "";
-        
-        output += !folder.Equals("picture") && !folder.Equals("document") && !folder.Equals("music") && !folder.Equals("download") ? output += msgToString("Savelocation for " + folder + " not found.") : "";
+        if(folder.Equals("picture"))
+        {
+            output += msgToString("Savelocation: " + configLoader.configElementFolder.picture.savelocation);
+            //Add fileendings
+        }
+        else if(folder.Equals("document"))
+        {
+            output += msgToString("Savelocation: " + configLoader.configElementFolder.document.savelocation);
+            //Add fileendings
+        }
+        else if(folder.Equals("music"))
+        {
+            output += msgToString("Savelocation: " + configLoader.configElementFolder.music.savelocation);
+            //Add fileendings
+        }
+        else if(folder.Equals("download"))
+        {
+            output += msgToString("Savelocation: " + configLoader.configElementFolder.download.savelocation);
+            //Add fileendings
+        }
+        else
+        {
+            output += msgToString("Savelocation for " + folder + " not found.");
+        }
                 
         return output;
     }
