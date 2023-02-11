@@ -38,22 +38,37 @@ public class ConfigImportTester{
         if(folder.Equals("picture"))
         {
             output += msgToString("Savelocation: " + configLoader.configElementFolder.picture.savelocation);
-            //Add fileendings
+            output += msgToString("Fileending");
+            foreach(string ende in configLoader.configElementFolder.picture.ending)
+            {
+                output += msgToString(ende);
+            }
         }
         else if(folder.Equals("document"))
         {
             output += msgToString("Savelocation: " + configLoader.configElementFolder.document.savelocation);
-            //Add fileendings
+            foreach(string ende in configLoader.configElementFolder.document.ending)
+            {
+                output += msgToString(ende);
+            }
         }
         else if(folder.Equals("music"))
         {
             output += msgToString("Savelocation: " + configLoader.configElementFolder.music.savelocation);
             //Add fileendings
+            foreach(string ende in configLoader.configElementFolder.music.ending)
+            {
+                output += msgToString(ende);
+            }
         }
         else if(folder.Equals("download"))
         {
             output += msgToString("Savelocation: " + configLoader.configElementFolder.download.savelocation);
             //Add fileendings
+            foreach(string ende in configLoader.configElementFolder.music.ending)
+            {
+                output += msgToString(ende);
+            }
         }
         else
         {
