@@ -65,7 +65,7 @@ public class ConfigImportTester{
         {
             output += msgToString("Savelocation: " + configLoader.configElementFolder.download.savelocation);
             //Add fileendings
-            foreach(string ende in configLoader.configElementFolder.music.ending)
+            foreach(string ende in configLoader.configElementFolder.download.ending)
             {
                 output += msgToString(ende);
             }
