@@ -34,7 +34,7 @@ public class ConfigImportTester{
     {
         string output = "";
         output += msgToString(folder);
-        output += msgToString("Savelocation: " + configLoader.folders.folder[1].name);
+        output += msgToString("Savelocation: " + configLoader.folders.folder.ElementAt(1).name);
         /*
         if(folder.Equals("picture"))
         {
