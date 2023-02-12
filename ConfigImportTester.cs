@@ -34,10 +34,11 @@ public class ConfigImportTester{
     {
         string output = "";
         output += msgToString(folder);
-
+        output += msgToString("Savelocation: " + configLoader.folders.folder[0].name);
+        /*
         if(folder.Equals("picture"))
         {
-            output += msgToString("Savelocation: " + configLoader.configElementFolder.picture.savelocation);
+            output += msgToString("Savelocation: " + configLoader.folders.folder[0].name);
             output += msgToString("Fileending");
             foreach(string ende in configLoader.configElementFolder.picture.ending)
             {
@@ -74,7 +75,7 @@ public class ConfigImportTester{
         {
             output += msgToString("Savelocation for " + folder + " not found.");
         }
-                
+        */
         return output;
     }
 }

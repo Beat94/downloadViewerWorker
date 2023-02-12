@@ -16,7 +16,7 @@ public class ConfigLoader
 
     public bool error{get;}
     public string errorMsg{get;}
-    public ConfigElementFolder configElementFolder {get; set;}
+    public Folders folders {get; set;}
 
     public ConfigLoader(string jsonFileName)
     {
@@ -28,7 +28,7 @@ public class ConfigLoader
         else
         {
             string jsonString = File.ReadAllText(jsonFileName);
-            this.configElementFolder = JsonSerializer.Deserialize<ConfigElementFolder>(jsonString);
+            this.folders = JsonSerializer.Deserialize<Folders>(jsonString);
         }
 
     }
