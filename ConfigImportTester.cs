@@ -12,7 +12,16 @@ public class ConfigImportTester{
         output += configToString("document");
         output += configToString("music");
         output += configToString("download");
-        output += configToString("lol");
+        //output += configToString("lol");
+        return output;
+    }
+
+    // should i import whole configloader in getFileEnding-Function
+    public string getFileEndings(string folder)
+    {
+        string output = "";
+        //foreach()
+
         return output;
     }
 
@@ -34,7 +43,9 @@ public class ConfigImportTester{
     {
         string output = "";
         output += msgToString(folder);
-        output += msgToString("Savelocation: " + configLoader.folders.folder.ElementAt(1).name);
+       
+        //error - check if config-loader-part is correct
+        output += msgToString("Savelocation: " + configLoader.folders.folder[1].name);
         /*
         if(folder.Equals("picture"))
         {
