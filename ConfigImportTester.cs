@@ -25,6 +25,15 @@ public class ConfigImportTester{
         return output;
     }
 
+    // should i import whole configloader in getFileEnding-Function
+    public string getFileEndings(string folder)
+    {
+        string output = "";
+        //foreach()
+
+        return output;
+    }
+
     private string msgToString(string msg)
     {
         return msg + "\n";
@@ -34,7 +43,7 @@ public class ConfigImportTester{
     {
         string output = "";
         output += msgToString(folder);
-        
+       
         //error - check if config-loader-part is correct
         output += msgToString("Savelocation: " + configLoader.folders.folder[1].name);
         /*
