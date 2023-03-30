@@ -16,7 +16,7 @@ public class ConfigLoader
 
     public bool error{get;}
     public string errorMsg{get;}
-    public Folders folders {get; set;}
+    public Folders? folders {get; set;}
 
     public ConfigLoader(string jsonFileName)
     {
