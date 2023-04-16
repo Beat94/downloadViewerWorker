@@ -35,7 +35,10 @@ public class ConfigImportTester{
     {
         string output = "";
         output += msgToString(folder);
-       
+
+        // insert here folder searching algorithm
+        // foreach()
+
         //error - check if config-loader-part is correct
         output += msgToString("Savelocation: " + configLoader.folders.folders[1].name);
         /*
