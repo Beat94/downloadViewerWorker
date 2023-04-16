@@ -2,5 +2,5 @@ namespace ViewerNamespace;
 
 public class Folders
 {
-    public IList<Folder> folder {get; set;}
+    public List<Folder> folder {get; set;}
 }
