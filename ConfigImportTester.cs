@@ -26,16 +26,6 @@ public class ConfigImportTester{
     }
 
     // should i import whole configloader in getFileEnding-Function
-    
-    /*
-    public string getFileEndings(string folder)
-    {
-        string output = "";
-        //foreach()
-
-        return output;
-    }
-    */
     private string msgToString(string msg)
     {
         return msg + "\n";
