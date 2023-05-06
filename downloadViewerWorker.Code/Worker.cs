@@ -20,6 +20,8 @@ public class Worker : BackgroundService
             _logger.LogError(cl.errorMsg);
         }
 
+        _logger.LogInformation("Download-Link: "+ cl.GetDownloadLink());
+
         Viewer v = new Viewer("");
 
         _logger.LogInformation(v.getFolder());
