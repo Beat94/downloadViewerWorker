@@ -1,0 +1,55 @@
+{
+    "folders":[
+        {
+            "name":"picture",
+            "settings":
+            {
+                "savelocation": "picture Savelocation",
+                "ending": 
+                [
+                    "jpeg",
+                    "jpg",
+                    "png",
+                    "gif"
+                ]
+            }
+        },
+        {
+            "name":"document",
+            "settings":
+            {
+                "savelocation": "document Savelocation",
+                "ending": 
+                [
+                    "doc",
+                    "dot",
+                    "docm",
+                    "docx",
+                    "dotx",
+                    "txt",
+                    "xls"
+                ]
+            }
+        },
+        {
+            "name":"music",
+            "settings":
+            {
+                "savelocation": "music savelocation",
+                "ending":
+                [
+                    "mp3",
+                    "wav",
+                    "flac"
+                ]
+            }
+        },
+        {
+            "name":"download",
+            "settings":
+            {
+                "savelocation": "E:/daten/Downloads"
+            }
+        }
+    ]
+}
