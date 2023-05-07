@@ -20,7 +20,22 @@ public class ConfigLoader
         {
             string jsonString = File.ReadAllText(jsonFileName);
             this.folders = JsonSerializer.Deserialize<Folders>(jsonString);
+            this.errorMsg = "";
+        }
+    }
+
+    public String GetDownloadFolder()
+    {
+        String output = "";
+
+        foreach (Folder folder in folders.folders)
+        {
+            if (folder.name.ToLower() == "downloads" || folder.name.ToLower() == "download")
+            {
+                output = folder.settings.savelocation;
+            }
         }
 
+        return output;
     }
 }
