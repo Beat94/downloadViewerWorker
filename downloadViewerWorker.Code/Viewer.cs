@@ -5,9 +5,10 @@ public class Viewer
     string folder{get;}
     DirectoryInfo directoryInfo{get;}
     public FileInfo[] fileInfo{get;}
+
     public Viewer(string pathString)
     {
-        folder = "";
+        string folder = "";
 
         if(Directory.Exists(pathString))
         {
@@ -22,6 +23,13 @@ public class Viewer
     }
 
     public int countFiles(){
-        return fileInfo.Length;
+        if (fileInfo != null)
+        {
+            return fileInfo.Length;
+        }
+        else
+        { 
+            return 0;
+        }
     }
 }
