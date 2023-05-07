@@ -16,18 +16,23 @@ public class Worker : BackgroundService
     {
         ConfigLoader cl = new ConfigLoader("./config.json");
         ConfigImportTester cit = new ConfigImportTester(cl);
-        if(cl.error){
+        if (cl.error){
             _logger.LogError(cl.errorMsg);
         }
+
+        _logger.LogInformation("Download-Link: "+ cl.GetDownloadLink());
 
         Viewer v = new Viewer("");
 
         _logger.LogInformation(v.getFolder());
         _logger.LogInformation(v.countFiles().ToString());
 
-        foreach(FileInfo file in v.fileInfo)
-        {
-            _logger.LogInformation(file.ToString());
+        if (v.countFiles() > 0) 
+        { 
+            foreach (FileInfo file in v.fileInfo)
+            {
+                _logger.LogInformation(file.ToString());
+            }
         }
 
         _logger.LogInformation(cit.showConfig());
