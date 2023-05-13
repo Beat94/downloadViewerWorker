@@ -6,27 +6,27 @@ namespace ViewerNamespace;
 public class ConfigLoader
 {
     public bool error{get;}
-    public String errorMsg{get;}
+    public string errorMsg{get;}
     public Folders? folders {get; set;}
 
     public ConfigLoader(string jsonFileName)
     {
-        if(String.IsNullOrEmpty(File.ReadAllText(jsonFileName)))
+        if(string.IsNullOrEmpty(File.ReadAllText(jsonFileName)))
         {
             this.error = true;
             this.errorMsg = "ConfigFile is null or empty";
         }
         else
         {
-            String jsonString = File.ReadAllText(jsonFileName);
+            string jsonString = File.ReadAllText(jsonFileName);
             this.folders = JsonSerializer.Deserialize<Folders>(jsonString);
             this.errorMsg = "";
         }
     }
 
-    public String GetDownloadFolder()
+    public string GetDownloadFolder()
     {
-        String output = "";
+        string output = "";
 
         foreach (Folder folder in folders.folders)
         {
@@ -39,9 +39,9 @@ public class ConfigLoader
         return output;
     }
 
-    public String GetDownloadLink()
+    public string GetDownloadLink()
     {
-        String output = "";
+        string output = "";
 
         foreach (Folder folder in folders.folders) 
         {
