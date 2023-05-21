@@ -2,8 +2,8 @@ namespace ViewerNamespace;
 
 public class Viewer
 {
-    string folder{get;}
-    DirectoryInfo directoryInfo{get;}
+    public string folder{get;}
+    public DirectoryInfo directoryInfo{get;}
     public FileInfo[] fileInfo{get;}
 
     public Viewer(string pathString)
