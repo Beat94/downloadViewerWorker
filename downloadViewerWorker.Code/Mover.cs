@@ -8,5 +8,13 @@ namespace downloadViewerWorker.Code
 {
     public class Mover
     {
+        ConfigLoader configLoader;
+        Viewer viewer;
+
+        public Mover(Viewer viewer, ConfigLoader configLoader)
+        { 
+            this.viewer = viewer;
+            this.configLoader = configLoader;
+        }
     }
 }
