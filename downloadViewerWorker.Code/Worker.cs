@@ -6,6 +6,7 @@ namespace downloadViewerWorker;
 public class Worker : BackgroundService
 {
     private readonly ILogger<Worker> _logger;
+    private Mode mode = Mode.test;
 
     public Worker(ILogger<Worker> logger)
     {
@@ -34,6 +35,8 @@ public class Worker : BackgroundService
         }
 
         _logger.LogInformation(cit.showConfig());
+
+        Mover mover = new Mover(v, cl, mode);
 
         /*
         while (!stoppingToken.IsCancellationRequested)
