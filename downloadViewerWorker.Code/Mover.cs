@@ -8,9 +8,9 @@ namespace downloadViewerWorker;
 
 public class Mover
 {
-    ConfigLoader configLoader;
-    Viewer viewer;
-    Mode mode;
+    public ConfigLoader configLoader {get;}
+    public Viewer viewer{get;}
+    public Mode mode{get;}
 
     public Mover(Viewer viewer, ConfigLoader configLoader, Mode mode)
     { 

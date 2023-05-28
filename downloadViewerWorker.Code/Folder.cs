@@ -1,4 +1,4 @@
-namespace ViewerNamespace;
+namespace downloadViewerWorker;
 
 public class Folder
 {

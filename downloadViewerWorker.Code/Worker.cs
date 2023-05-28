@@ -1,5 +1,4 @@
 using Microsoft.Extensions.Logging;
-using ViewerNamespace;
 
 namespace downloadViewerWorker;
 
@@ -15,7 +14,7 @@ public class Worker : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        ConfigLoader cl = new ConfigLoader("./config.json");
+        ConfigLoader cl = new ConfigLoader("./config.json", _logger);
         ConfigImportTester cit = new ConfigImportTester(cl);
         if (cl.error){
             _logger.LogError(cl.errorMsg);

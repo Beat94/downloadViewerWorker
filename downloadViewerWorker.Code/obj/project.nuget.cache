@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tk8rQhR0wf4iTTvQWE4zMc/i/FaS0j6Pbzz7k1UTBDGGvZwiczMtZsmdAXxMVejM7feeOInezbkJseBcOGr7+Q==",
+  "dgSpecHash": "mB6hslOOM7aq3KZpmFAWJPW3a+Q4DKLwfJD7l6APZOCb2EEF37LIfVr75yrGU3upDwVrTBLjtHq4jil5DsPsig==",
   "success": true,
-  "projectFilePath": "D:\\eigene-projekte\\C-Sharp\\downloadViewerWorker\\downloadViewerWorker.Code\\downloadViewerWorker.Code.csproj",
+  "projectFilePath": "E:\\programming\\downloadViewerWorker\\downloadViewerWorker.Code\\downloadViewerWorker.Code.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Beat\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\Beat\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

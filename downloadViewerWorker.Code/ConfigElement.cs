@@ -1,6 +1,6 @@
 using System.Collections;
 
-namespace ViewerNamespace;
+namespace downloadViewerWorker;
 
 public class ConfigElement
 {

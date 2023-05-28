@@ -1,5 +1,7 @@
+using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.Extensions.Logging;
 
 namespace downloadViewerWorker;
 
@@ -8,19 +10,28 @@ public class ConfigLoader
     public bool error{get;}
     public string errorMsg{get;}
     public Folders? folders {get; set;}
+    private ILogger _logger;
 
-    public ConfigLoader(string jsonFileName)
+    public ConfigLoader(string jsonFileName, ILogger _logger)
     {
-        if(string.IsNullOrEmpty(File.ReadAllText(jsonFileName)))
+        this._logger = _logger;
+        try
         {
-            this.error = true;
-            this.errorMsg = "ConfigFile is null or empty";
+            if(string.IsNullOrEmpty(File.ReadAllText(jsonFileName)))
+            {
+                this.error = true;
+                this.errorMsg = "ConfigFile is null or empty";
+            }
+            else
+            {
+                string jsonString = File.ReadAllText(jsonFileName);
+                this.folders = JsonSerializer.Deserialize<Folders>(jsonString);
+                this.errorMsg = "";
+            }
         }
-        else
+        catch(Exception e)
         {
-            string jsonString = File.ReadAllText(jsonFileName);
-            this.folders = JsonSerializer.Deserialize<Folders>(jsonString);
-            this.errorMsg = "";
+            _logger.LogError(e);
         }
     }
 

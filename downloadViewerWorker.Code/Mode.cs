@@ -1,6 +1,6 @@
 namespace downloadViewerWorker;
 
-enum Mode
+public enum Mode
 {
     test,
     debug,
