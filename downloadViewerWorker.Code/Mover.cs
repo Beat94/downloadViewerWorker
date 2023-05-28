@@ -19,5 +19,19 @@ public class Mover
         this.mode = mode;
     }
 
-    
+    public void relocateFiles()
+    {
+        if(mode.equals(Mode.productive))
+        {
+            //move files
+        }
+        else if(mode.equals(Mode.debug))
+        {
+        
+        }
+        else
+        {
+            //Don't manipulate files - write only where the files would be moved
+        }
+    }
 }
