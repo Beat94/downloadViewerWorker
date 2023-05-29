@@ -21,17 +21,17 @@ public class Mover
 
     public void relocateFiles()
     {
-        if(mode.equals(Mode.productive))
+        if(mode.Equals(Mode.productive))
         {
             //move files
         }
-        else if(mode.equals(Mode.debug))
+        else if(mode.Equals(Mode.debug))
         {
-        
+            // shows where it would move files and gives additional Informations
         }
         else
         {
-            //Don't manipulate files - write only where the files would be moved
+            // Don't manipulate files - write only where the files would be moved
         }
     }
 }
