@@ -34,8 +34,9 @@ public class Worker : BackgroundService
             }
         }
         */
+        _logger.LogInformation(cit.showConfig());
 
-        Mover mover = new Mover(v, cl, mode, _logger);
+        Mover mover = new Mover(v, cl, cit, mode, _logger);
         
         mover.moverCountFiles();
 

@@ -12,11 +12,18 @@ public class Mover
     public Viewer viewer{get;}
     public Mode mode{get;}
     public ILogger _logger{get;}
+    public ConfigImportTester cit {get;}
 
-    public Mover(Viewer viewer, ConfigLoader configLoader, Mode mode, ILogger _logger)
+    public Mover(
+        Viewer viewer, 
+        ConfigLoader configLoader, 
+        ConfigImportTester cit, 
+        Mode mode, 
+        ILogger _logger)
     { 
         this.viewer = viewer;
         this.configLoader = configLoader;
+        this.cit = cit;
         this.mode = mode;
         this._logger = _logger;
     }
