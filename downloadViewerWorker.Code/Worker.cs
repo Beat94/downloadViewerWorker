@@ -25,6 +25,7 @@ public class Worker : BackgroundService
         _logger.LogInformation(v.getFolder());
         _logger.LogInformation(v.countFiles().ToString());
 
+        /*
         if (v.countFiles() > 0) 
         { 
             foreach (FileInfo file in v.fileInfo)
@@ -32,10 +33,11 @@ public class Worker : BackgroundService
                 _logger.LogInformation(file.ToString());
             }
         }
+        */
 
-        _logger.LogInformation(cit.showConfig());
-
-        Mover mover = new Mover(v, cl, mode);
+        Mover mover = new Mover(v, cl, mode, _logger);
+        
+        mover.moverCountFiles();
 
         /*
         while (!stoppingToken.IsCancellationRequested)
