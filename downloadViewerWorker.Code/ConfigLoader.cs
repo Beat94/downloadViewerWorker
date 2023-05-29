@@ -31,7 +31,7 @@ public class ConfigLoader
         }
         catch(Exception e)
         {
-            _logger.LogError(e);
+            _logger.LogError(e.Message);
         }
     }
 
